@@ -18,3 +18,4 @@ https://github.com/tkipf/pygcn
 adj = adj + adj.T.multiply(adj.T > adj) - adj.multiply(adj.T > adj)
 ```
 
+3、我把citeseer和pubmed加进来了，citeseer改个路径就可以直接用，但是pubmed似乎还要单独去处理，今天没空管这个了，以后有空再说吧。pubmed可能稍微复杂一点，可以参考GraphSAGE的处理方法来理解：https://github.com/twjiang/graphSAGE-pytorch/blob/master/src/dataCenter.py
